@@ -12,7 +12,7 @@ medlens/
 └── database/    SQL scripts (create DB, seed roles/admin)
 ```
 
-## What is fully working out of the box
+## What is fully working 
 
 - Registration / login with **JWT** auth, **bcrypt** password hashing, role-based access
   (`patient`, `doctor`, `admin`) looked up by name (never hardcoded IDs).

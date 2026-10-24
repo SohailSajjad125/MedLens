@@ -30,21 +30,6 @@ medlens/
 - Dark/light theme toggle, responsive layout, every dashboard card/button is clickable
   and routes to real detail views (no dead UI).
 
-## What is scaffolded as an extension point (not fully built)
-
-These are wired into the data model and noted in code comments so you can finish them
-incrementally for your FYP write-up:
-- Prescription analyzer (prompt template ready in `backend/app/ai/prompts/prescription_prompt.py`)
-- Health timeline / analytics charts beyond the comparison view (recharts is already a
-  frontend dependency — see `ReportValue` model for the data you'd chart)
-- Google OAuth login (config keys reserved in `.env`, `google_id` column exists on `User`)
-- Urdu translation & text-to-speech (`language` field exists in `UserSetting`)
-- Email notifications (the `Notification` model + endpoints exist; wire up an SMTP
-  sender, e.g. `fastapi-mail`, in a new `services/notification/notification_service.py`)
-- Rate limiting / audit log writing (the `AuditLog` model exists; call it from
-  `core/dependencies.py` or add `slowapi` middleware)
-
----
 
 ## 1. Prerequisites
 
